@@ -22,41 +22,40 @@ def draw_circles_2(ax,n,center,radius):
     if n>0:
         #Finds x and y by sending the center and the radius to the Method Circle, where it will calculate the figure itself.
         x,y = circle(center,radius)
-        #Plots the main circle from the data found from the "Circle" method. To give its unique shape, I added the value of the radius to x so that it  
-        ax.plot(x, y,color='k')
-        
         #Finds x and y by sending the center and the radius to the Method Circle, where it will calculate the figure itself.
         x1,y1 = circle(center,radius/3)
-        #Plots the circle from data found from the "Circle" method. To give its unique shape, I added the value of the radius to x so that it  
-        ax.plot(x1, y1,color='k')
-        #Recursively calls itself again with a radius times the width. This will call itself over and over until the counter n reaches 0.
-        draw_circles_2(ax,n-1,center,radius/3)
-        
         #Finds x and y by sending the center and the radius to the Method Circle, where it will calculate the figure itself.
         x2,y2 = circle([center[0]+radius-radius/3,center[1]],radius/3)
-        #Plots the circle from data found from the "Circle" method. To give its unique shape, I added the value of the radius to x so that it  
-        ax.plot(x2, y2,color='k')
-        #Recursively calls itself again with a radius times the width. This will call itself over and over until the counter n reaches 0.
-        draw_circles_2(ax,n-1,[center[0]+radius-radius/3,center[1]],radius/3)
-        
         #Finds x and y by sending the center and the radius to the Method Circle, where it will calculate the figure itself.
         x3,y3 = circle([center[0]-radius+radius/3,center[1]],radius/3)
-        #Plots the circle from data found from the "Circle" method. To give its unique shape, I added the value of the radius to x so that it  
-        ax.plot(x3, y3,color='k')
-        #Recursively calls itself again with a radius times the width. This will call itself over and over until the counter n reaches 0.
-        draw_circles_2(ax,n-1,[center[0]-radius+radius/3,center[1]],radius/3)
-        
         #Finds x and y by sending the center and the radius to the Method Circle, where it will calculate the figure itself.
         x4,y4 = circle([center[0],center[1]+radius-radius/3],radius/3)
-        #Plots the circle from data found from the "Circle" method. To give its unique shape, I added the value of the radius to x so that it  
-        ax.plot(x4, y4,color='k')
-        #Recursively calls itself again with a radius times the width. This will call itself over and over until the counter n reaches 0.
-        draw_circles_2(ax,n-1,[center[0],center[1]+radius-radius/3],radius/3)
-        
         #Finds x and y by sending the center and the radius to the Method Circle, where it will calculate the figure itself.
         x5,y5 = circle([center[0],center[1]-radius+radius/3],radius/3)
+        
+        #Plots the main circle from the data found from the "Circle" method. To give its unique shape, I added the value of the radius to x so that it  
+        ax.plot(x, y,color='k')
+        #Plots the circle from data found from the "Circle" method. To give its unique shape, I added the value of the radius to x so that it  
+        ax.plot(x1, y1,color='k')
+        #Plots the circle from data found from the "Circle" method. To give its unique shape, I added the value of the radius to x so that it  
+        ax.plot(x2, y2,color='k')
+        #Plots the circle from data found from the "Circle" method. To give its unique shape, I added the value of the radius to x so that it  
+        ax.plot(x3, y3,color='k')
+        #Plots the circle from data found from the "Circle" method. To give its unique shape, I added the value of the radius to x so that it  
+        ax.plot(x4, y4,color='k')
         #Plots the circle from data found from the "Circle" method. To give its unique shape, I added the value of the radius to x so that it  
         ax.plot(x5, y5,color='k')
+        
+        
+        
+        #Recursively calls itself again with a radius times the width. This will call itself over and over until the counter n reaches 0.
+        draw_circles_2(ax,n-1,center,radius/3)
+        #Recursively calls itself again with a radius times the width. This will call itself over and over until the counter n reaches 0.
+        draw_circles_2(ax,n-1,[center[0]+radius-radius/3,center[1]],radius/3)
+        #Recursively calls itself again with a radius times the width. This will call itself over and over until the counter n reaches 0.
+        draw_circles_2(ax,n-1,[center[0]-radius+radius/3,center[1]],radius/3)
+        #Recursively calls itself again with a radius times the width. This will call itself over and over until the counter n reaches 0.
+        draw_circles_2(ax,n-1,[center[0],center[1]+radius-radius/3],radius/3)
         #Recursively calls itself again with a radius times the width. This will call itself over and over until the counter n reaches 0.
         draw_circles_2(ax,n-1,[center[0],center[1]-radius+radius/3],radius/3)
         
