@@ -1,3 +1,17 @@
+'''
+Author: Carlos Fernando Castaneda
+Class : CS 2302 
+Date Modified: February 8, 2019 
+Instructor: Olac Fuentes 
+Assingment: Lab 1 Recursion
+TA: Anindita Nath & Maliheh Zaragan
+Purpose: To practice using recursion amd to identify the process of ploting figures using
+pythons libraries
+
+Part 1 of 4 
+
+Nested Squares
+'''
 #Imports the matplotlibrary and numpy to plot the figures
 import matplotlib.pyplot as plt
 #Imports the numpy 
