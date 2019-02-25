@@ -11,6 +11,8 @@ comparisons each algorithm makes) for various list lengths.
 """
 #Used to make the random list
 import random
+#Used to calculate the time for each method
+import time
 #Node Functions
 class Node(object):
     # Constructor
@@ -265,7 +267,8 @@ def Copy(L):
     return copy
 
 #Makes a random list
-L = RandomList(5)
+ListSize = int(input('How long do you want your list to be?'))
+L = RandomList(ListSize)
 print('Original list: ')
 print('')
 Print(L)
@@ -273,13 +276,29 @@ print('')
 print('Sorting by:')
 print('')
 print('Bubble sort, median is: ')
+start1 = int(time.time()*1000)
 print(MedianBubble(L))
+end1 = int(time.time()*1000)
+print('Resulting time in seconds was: ')
+print(end1-start1)
 print('')
 print('Merge sort, median is: ')
+start2 = int(time.time()*1000)
 print(MedianMerge(L))
+end2 = int(time.time()*1000)
+print('Resulting time in seconds was: ')
+print(end2-start2)
 print('')
 print('Sorted by quick sort, median is: ')
+start3 = int(time.time()*1000)
 print(MedianQuick(L))
+end3 = int(time.time()*1000)
+print('Resulting time in seconds was: ')
+print(end3-start3)
 print('')
 print('Sorted by the new quick sort, median is: ')
+start4 = int(time.time()*1000)
 print(MedianQuick2(L))
+end4 = int(time.time()*1000)
+print('Resulting time in seconds was: ')
+print(end4-start4)
