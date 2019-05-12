@@ -91,6 +91,8 @@ def subset_summation(S,last,goal):
 
 #Starts the timer for the running time for part 1
 startTime1=time.time() 
+print('Importing algorithim equations to test: ')
+print()
 #Creates a new array called 'part1' which will import all of the functions that will be compared its equalities
 part1=['mpmath.sin(x)',
        'mpmath.cos(x)',
@@ -111,7 +113,9 @@ part1=['mpmath.sin(x)',
 #The actual method t
 sim_count = similarities(part1)
 #Prints the count number found in the method similarities
+print()
 print('The number of similarities in the equations are a total of: ', sim_count)
+print()
 #Ends the timer for the running time for part 1
 endTime1=time.time()
 #Creates the fianl time for the running time for part 1
@@ -121,8 +125,11 @@ finalTime1 = endTime1-startTime1
 startTime2=time.time()
 #Creates a new array of integeres needed for part 2 of the lab
 part2=[2,4,5,9,12]
+print('Partition process using array', part2, 'commencing: ')
+print()
 #Sends the new array to method arrayPartition
 print(arrayPartition(part2,part2))
+print()
 #Ends the timer for the running time for part 2
 endTime2=time.time()
 #Creates the fianl time for the running time for part 2
