@@ -1,13 +1,13 @@
 """
 Author: Carlos Fernando Castaneda
 Class : CS 2302 
-Date Modified: April 29, 2019 
+Date Modified: May 12, 2019 
 Instructor: Olac Fuentes 
-Assingment: Lab 7 Modified Maze
+Assingment: Lab 8 Algorithm Design Techniques
 TA: Anindita Nath & Maliheh Zaragan
-Purpose: to implement both standard union and compression techniques
-as well as new techniques to modify the maze program to create a new
-solution for that specififcally maze.
+Purpose: to implement both randomized algorithms and backtracking teachniques
+learned in class to check if two algorithmic identities are the same, and to 
+check the partitions of a new array.
 """
 #Imports various tools to help us calculate the hash tables to be used in this lab
 import time
